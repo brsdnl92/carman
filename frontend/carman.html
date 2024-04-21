@@ -32,10 +32,10 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Belépés/Kilépés
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="login.html">Bejelentkezés</a></li>
-              <li><a class="dropdown-item" href="login_reg.html">Regisztráció</a></li>
-              <li><a class="dropdown-item" href="#">Kilépés</a></li>
+            <ul id="legordul" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="login.html" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Bejelentkezés</a></li>
+              <li><a class="dropdown-item" href="login_reg.html" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Regisztráció</a></li>
+              <li><a class="dropdown-item" href="#" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Kilépés</a></li>
             </ul>
                     <li class="nav-item">
             <a class="nav-link" href="contact.html">Kapcsolat</a>
@@ -45,11 +45,11 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Járműpark
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="basic.html">Basic felszereltség</a></li>
-              <li><a class="dropdown-item" href="comfort.html">Comfort felszereltség</a></li>
-              <li><a class="dropdown-item" href="premium.html">Prémium felszereltség</a></li>
-              <li><a class="dropdown-item" href="cars.html">Összes jármű</a></li>
+            <ul id="legordul" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="basic.html" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Basic kategória</a></li>
+              <li><a class="dropdown-item" href="comfort.html" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Comfort kategória</a></li>
+              <li><a class="dropdown-item" href="premium.html" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Prémium kategória</a></li>
+              <li><a class="dropdown-item" href="cars.html" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Összes jármű</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -67,43 +67,41 @@
   </header>
 
   <main>
-    <div class="container">
+    <div class="container" ; style="background-color: rgba(36, 55, 231, 0.212); margin-top: 50px; border-radius: 30px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
       <div class="row" ; style="padding-top: 20px">
         <div class="col">
           <h1 class="text-center">CarManagement</h1>
         </div>
         <div class="row" ; style="padding: 20px">
-          <div class="col"; style="text-align: justify";>
+          <div class="col" ; style="text-align: justify" ;>
             <h3>
-          <p> A CarManagement rendszer egy olyan webes felület, ahol regisztrálás, és bejelentkezést követően az adott
-            vállalkozás a saját „kulcsos” gépjármű állományáról információkat tárolhat és kérdezhet le, így például a
-            gépjárművek műszaki, felszereltségi állapotáról, kihasználtságáról, valamint az igénylésekről. Ezen kívül
-            információt tárol a gépjárművek használatára jogosult felhasználók adatairól, az általuk igényelt
-            gépjárművekről.</p>
+              <p> A CarManagement egy olyan flottakezelő felület, ahol a szervezet a saját gépjármű állományáról, a
+                gépjárművek használatára jogosult felhasználók
+                adatairól tárol információkat.</p>
+              <p>A szervezet gépjármű ügyintézéssel megbízott munkatársa rögzíti a gépjármű adatokat valamint a
+                felhasználói adatokat.</p>
+              <p>A felhasználók a kapott felhasználónévvel jelszóval igénylésüket a flottakezelő
+                rendszer felületén keresztül nyújthatják be. Ott láthatják, hogy adott időpontra mely gépjárművek
+                érhetők el. </p>
+              <p>A munkatársak részére Basic, Comfort, valamint Premium kategóriájú járművek állnak
+                rendelkezésre - beosztásuktól, jogosultsági szintjüktől függően.
+              </p>
 
-            <p>A vállalkozás gépjármű ügyintézéssel megbízott munkatársa rögzíti a gépjármű adatokat, rögzíti a
-            felhasználói adatokat. A felhasználók a kapott felhasználónévvel jelszóval igénylésüket a flottakezelő
-            rendszer felületén keresztül nyújthatják be. Ott láthatják, hogy adott időpontra mely gépjárművek érhetők
-            el.</p>
-
-            <p>A munkatársak részére átlagos, jól felszerelt, valamint prémium kategóriájú járművek állnak rendelkezésre,
-            attól függően, hogy az adott felhasználó milyen beosztásban van, illetve a vállalkozáson belül milyen szintű
-            hozzáférést engedélyeztek számára a gépjármű állományhoz.</p>
-
-            <p>Tehát összefoglalva: lehetőség van a felhasználóknak információt szerezni a bérelni kívánt gépjármű
-            elérhetőségéről, illetve amennyiben elérhető, adott időtartamra lefoglalni azt.</p>
-          </h3>
+              <p>Tehát ez a felület lehetőséget biztosít a munkatársak részére az
+                elérhető járműveket munkájukhoz megigényelni, lefoglalni.
+              </p>
+            </h3>
           </div>
         </div>
 
       </div>
-      <div class="row" ; style="padding-top: 10px">
-        <div class="d-grid gap-2 col-6 mx-auto">
+      
+    </div>
+<div class="row" ; style="margin-top: 30px">
+        <div class="d-grid gap-2 col-4 mx-auto">
           <a href="login.html" class="btn btn-primary">Tovább a bejelentkezés oldalra...</a>
         </div>
       </div>
-    </div>
-
   </main>
 
 </body>
