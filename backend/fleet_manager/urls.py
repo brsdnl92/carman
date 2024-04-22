@@ -21,12 +21,19 @@ from fleet_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/jarmuvek',views.jarmu_handler),
-    path('api/jarmukategoria',views.jarmu_kategoria_handler),
-    path('api/foglalasok',views.foglalas_handler),
-    path('api/markak',views.marka_handler),
     path('', views.home, name='home'),
+    path('basic/', views.basic),
+    path('carman/', views.carman),
+    path('cars/', views.cars),
+    path('comfort/', views.comfort),
+    path('contact/', views.contact),
+    path('foglalas/', views.foglalas),
+    path('premium/', views.premium),
     path('login/', views.login_page, name='login_page'),
     path('logout/', views.logout_page, name='logout_page'),
     path('register/', views.register_page, name='register_page'),
+    path('api/jarmuvek',views.jarmu_handler),
+    path('api/jarmukategoria',views.jarmu_kategoria_handler),
+    path('api/foglalasok',views.foglalas_handler),
+    path('api/jarmubykategoria/<int:cat_id>', views.jarmu_handler_by_category),
 ]

@@ -14,13 +14,55 @@ from .serializers import FoglalasSerializer
 from .models import Marka
 from .serializers import MarkaSerializer
 
+# HTML pages
 
-# Create your views here.
+@login_required(login_url='login_page')    
+def home(request):
+    return render(request,'index.html')
+
+@login_required(login_url='login_page')    
+def basic(request):
+    return render(request,'basic.html')
+
+@login_required(login_url='login_page')    
+def carman(request):
+    return render(request,'carman.html')
+
+@login_required(login_url='login_page')    
+def cars(request):
+    return render(request,'cars.html')
+
+@login_required(login_url='login_page')    
+def comfort(request):
+    return render(request,'comfort.html')
+
+@login_required(login_url='login_page')    
+def contact(request):
+    return render(request,'contact.html')
+
+@login_required(login_url='login_page')    
+def foglalas(request):
+    return render(request,'foglalas.html')
+
+@login_required(login_url='login_page')    
+def premium(request):
+    return render(request,'premium.html')
+
+
+# API pages
 @api_view(['GET', 'POST'])
 def jarmu_handler(request):
-
     if request.method == 'GET': 
         jarmuvek = Jarmu.objects.all()
+        serialized = JarmuSerializer(jarmuvek,many=True)
+        return Response(serialized.data)
+    
+@api_view(['GET', 'POST'])
+def jarmu_handler_by_category(request, cat_id):
+
+    kat = JarmuKategoria.objects.get(id = cat_id)
+    if request.method == 'GET': 
+        jarmuvek = Jarmu.objects.filter(jarmu_kategoria_id = kat)
         serialized = JarmuSerializer(jarmuvek,many=True)
         return Response(serialized.data)
 
@@ -39,18 +81,6 @@ def foglalas_handler(request):
         foglalasok = Foglalas.objects.all()
         serialized = FoglalasSerializer(foglalasok, many=True)
         return Response(serialized.data)
-
-@api_view(['GET'])
-def marka_handler(request):
-
-    if request.method == 'GET':
-        markak = Marka.objects.all()
-        serialized = MarkaSerializer(markak, many=True)
-        return Response(serialized.data)
-
-@login_required(login_url='login_page')    
-def home(request):
-    return render(request,'index.html')
 
 def login_page(request):
     if request.method == 'POST':
