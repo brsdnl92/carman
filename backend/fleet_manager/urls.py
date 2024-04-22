@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/jarmuvek',views.jarmu_handler),
     path('api/jarmukategoria',views.jarmu_kategoria_handler),
-    path('api/foglalasok',views.foglalas_handler)
+    path('api/foglalasok',views.foglalas_handler),
+    path('api/markak',views.marka_handler),
 ]

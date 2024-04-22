@@ -8,6 +8,8 @@ from .models import JarmuKategoria
 from .serializers import JarmuKategoriaSerializer
 from .models import Foglalas
 from .serializers import FoglalasSerializer
+from .models import Marka
+from .serializers import MarkaSerializer
 
 # Create your views here.
 @api_view(['GET', 'POST'])
@@ -32,4 +34,12 @@ def foglalas_handler(request):
     if request.method == 'GET':
         foglalasok = Foglalas.objects.all()
         serialized = FoglalasSerializer(foglalasok, many=True)
+        return Response(serialized.data)
+
+@api_view(['GET'])
+def marka_handler(request):
+
+    if request.method == 'GET':
+        markak = Marka.objects.all()
+        serialized = MarkaSerializer(markak, many=True)
         return Response(serialized.data)

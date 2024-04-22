@@ -5,10 +5,14 @@ class JarmuKategoria(models.Model):
     id = models.IntegerField(primary_key = True)
     nev = models.CharField(max_length = 100)
 
+class Marka(models.Model):
+    id = models.IntegerField(primary_key = True)
+    nev = models.CharField(max_length = 100)
+
 class Jarmu(models.Model):
     id = models.IntegerField(primary_key = True)
     rendszam = models.CharField(max_length = 7)
-    marka = models.CharField(max_length = 50)
+    marka_id = models.ForeignKey(Marka, on_delete=models.CASCADE)
     tipus = models.CharField(max_length = 50)
     szin = models.CharField(max_length = 50)
     km_ora_allas = models.IntegerField()
@@ -36,6 +40,8 @@ class Foglalas(models.Model):
     jarmu_id = models.ForeignKey(Jarmu, on_delete=models.CASCADE)
     foglalas_kezdete = models.DateTimeField()
     foglalas_vege = models.DateTimeField()
+
+
 
 
     
