@@ -57,9 +57,9 @@
           </li>
         </ul>
 
-        <span class="navbar-text ms-auto p-2 bd-highlight">
-          Nincs bejelentkezve!
-        </span>
+        <a href="{% url 'logout_page' %}" class="nav-link" style="color:whitesmoke">
+          {{ user }}
+        </a>
 
       </div>
       
@@ -67,41 +67,19 @@
   </header>
 
   <main>
-    <div class="container" ; style="background-color: rgba(36, 55, 231, 0.212); margin-top: 50px; border-radius: 30px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-      <div class="row" ; style="padding-top: 20px">
+    <div class="container">
+      <div class="row" ; style="padding-top: 100px">
         <div class="col">
-          <h1 class="text-center">CarManagement</h1>
+          <h1 class="text-center">Üdvözöljük a CarManagement oldalán!</h1>
         </div>
-        <div class="row" ; style="padding: 20px">
-          <div class="col" ; style="text-align: justify" ;>
-            <h3>
-              <p> A CarManagement egy olyan flottakezelő felület, ahol a szervezet a saját gépjármű állományáról, a
-                gépjárművek használatára jogosult felhasználók
-                adatairól tárol információkat.</p>
-              <p>A szervezet gépjármű ügyintézéssel megbízott munkatársa rögzíti a gépjármű adatokat valamint a
-                felhasználói adatokat.</p>
-              <p>A felhasználók a kapott felhasználónévvel jelszóval igénylésüket a flottakezelő
-                rendszer felületén keresztül nyújthatják be. Ott láthatják, hogy adott időpontra mely gépjárművek
-                érhetők el. </p>
-              <p>A munkatársak részére Basic, Comfort, valamint Premium kategóriájú járművek állnak
-                rendelkezésre - beosztásuktól, jogosultsági szintjüktől függően.
-              </p>
-
-              <p>Tehát ez a felület lehetőséget biztosít a munkatársak részére az
-                elérhető járműveket munkájukhoz megigényelni, lefoglalni.
-              </p>
-            </h3>
-          </div>
-        </div>
-
       </div>
-      
+      <div class="row" ; style="padding-top: 20px">
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <a href="carman.html" class="btn btn-primary">További információ...</a>
+        </div>
+      </div>
     </div>
-<div class="row" ; style="margin-top: 30px">
-        <div class="d-grid gap-2 col-4 mx-auto">
-          <a href="login.html" class="btn btn-primary">Tovább a bejelentkezés oldalra...</a>
-        </div>
-      </div>
+
   </main>
 
 </body>

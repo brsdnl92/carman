@@ -57,7 +57,8 @@ ROOT_URLCONF = 'fleet_manager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ BASE_DIR / 'fleet_app/static/' ],
+        'DIRS': [ BASE_DIR / 'fleet_app/static/', BASE_DIR / 'frontend/' ],
+        
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,8 +120,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '/fleet_app/static/')
+STATIC_URL = '/img/'
+STATIC_URL = 'BASE_DIR/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, '/fleet_app/static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'frontend')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
