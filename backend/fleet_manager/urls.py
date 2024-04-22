@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
 from fleet_app import views
 
 
@@ -35,5 +37,8 @@ urlpatterns = [
     path('api/jarmuvek',views.jarmu_handler),
     path('api/jarmukategoria',views.jarmu_kategoria_handler),
     path('api/foglalasok',views.foglalas_handler),
+    path('api/markak',views.marka_handler),
     path('api/jarmubykategoria/<int:cat_id>', views.jarmu_handler_by_category),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

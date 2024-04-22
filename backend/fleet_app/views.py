@@ -82,6 +82,13 @@ def foglalas_handler(request):
         serialized = FoglalasSerializer(foglalasok, many=True)
         return Response(serialized.data)
 
+@api_view(['GET'])
+def marka_handler(request):
+    if request.method == 'GET':
+        markak = Marka.objects.all()
+        serialized = MarkaSerializer(markak, many=True)
+        return Response(serialized.data)
+
 def login_page(request):
     if request.method == 'POST':
         username=request.POST['username']
