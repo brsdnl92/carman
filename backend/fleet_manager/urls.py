@@ -18,9 +18,14 @@ from django.contrib import admin
 from django.urls import path
 from fleet_app import views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/jarmuvek',views.jarmu_handler),
     path('api/jarmukategoria',views.jarmu_kategoria_handler),
-    path('api/foglalasok',views.foglalas_handler)
+    path('api/foglalasok',views.foglalas_handler),
+    path('', views.home, name='home'),
+    path('login/', views.login_page, name='login_page'),
+    path('logout/', views.logout_page, name='logout_page'),
+    path('register/', views.register_page, name='register_page'),
 ]
