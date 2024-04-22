@@ -30,6 +30,17 @@ a:hover {
     
 }
 
+#jarmuvek{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#navfilter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
 #legordul{
     border-radius: 10px;}
 
