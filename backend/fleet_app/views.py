@@ -48,6 +48,13 @@ def foglalas(request):
 def premium(request):
     return render(request,'premium.html')
 
+@login_required(login_url='login_page')    
+def statisztika(request):
+    return render(request,'statisztika.html')
+
+def onecar(request):
+    return render(request,'onecar.html')
+
 
 # API pages
 @api_view(['GET', 'POST'])
