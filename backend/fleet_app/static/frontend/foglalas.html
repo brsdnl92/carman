@@ -21,49 +21,79 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
       <div class="container">
-        
+
         <ul class="navbar-nav">
           <a class="navbar-brand" href="/">
-          <img src="/static/img/car_w2.png" alt="" width="mr-auto" height="25" class="d-inline-block align-text-middle">
+            <img src="/static/img/car_w2.png" alt="" width="mr-auto" height="25"
+              class="d-inline-block align-text-middle">
           </a>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/carman">CarManagement</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Belépés/Kilépés
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Felhasználók
             </a>
             <ul id="legordul" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="/login" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Bejelentkezés</a></li>
-              <li><a class="dropdown-item" href="/register" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Regisztráció</a></li>
-              <li><a class="dropdown-item" href="/logout" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Kilépés</a></li>
+              <li><a class="dropdown-item" href="/login"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Felhasználóváltás</a>
+              </li>
+              <li><a class="dropdown-item" href="#"
+                  style="color: lightgray;">Regisztráció</a>
+              </li>
+              <li><a class="dropdown-item" href="/logout"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Kilépés</a>
+              </li>
             </ul>
-                    <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="/contact">Kapcsolat</a>
           </li>
-          
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Járműpark
             </a>
-            <ul id="legordul" class="dropdown-menu  active" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="/basic" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Basic kategória</a></li>
-              <li><a class="dropdown-item" href="/comfort" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Comfort kategória</a></li>
-              <li><a class="dropdown-item" href="/premium" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Prémium kategória</a></li>
-              <li><a class="dropdown-item" href="/cars" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Összes jármű</a></li>
+            <ul id="legordul" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+              <li><a class="dropdown-item" href="/basic"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Basic
+                  kategória</a></li>
+
+
+
+              <li><a class="dropdown-item" href="/comfort"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Comfort
+                  kategória</a></li>
+
+
+
+              <li><a class="dropdown-item" href="/premium"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Prémium
+                  kategória</a></li>
+
+
+              <li><a class="dropdown-item" href="/cars"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Összes
+                  jármű</a></li>
+
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/foglalas">Foglalás</a>
+            <a class="nav-link active" href="/foglalas">Foglalás</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/statisztika">Statisztika</a>
+          </li>
+
+
         </ul>
-
-        <span class="navbar-text ms-auto p-2 bd-highlight">
-          {{ user }}
+        <span class="nav-item ms-auto p-2 bd-highlight" style="font-size: 1.1rem;">
+          Belépve: {{ user }}
         </span>
-
       </div>
-      
+
     </nav>
   </header>
 

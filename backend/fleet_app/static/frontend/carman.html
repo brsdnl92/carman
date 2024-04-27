@@ -18,54 +18,85 @@
   <header>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
       <div class="container">
-        
+
         <ul class="navbar-nav">
           <a class="navbar-brand" href="/">
-          <img src="/static/img/car_w2.png" alt="" width="mr-auto" height="25" class="d-inline-block align-text-middle">
+            <img src="/static/img/car_w2.png" alt="" width="mr-auto" height="25"
+              class="d-inline-block align-text-middle">
           </a>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/carman">CarManagement</a>
+            <a class="nav-link active" aria-current="page" href="/carman">CarManagement</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Belépés/Kilépés
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Felhasználók
             </a>
             <ul id="legordul" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="/login" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Bejelentkezés</a></li>
-              <li><a class="dropdown-item" href="/register" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Regisztráció</a></li>
-              <li><a class="dropdown-item" href="/logout" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Kilépés</a></li>
+              <li><a class="dropdown-item" href="/login"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Felhasználóváltás</a>
+              </li>
+              <li><a class="dropdown-item" href="#"
+                  style="color: lightgray;">Regisztráció</a>
+              </li>
+              <li><a class="dropdown-item" href="/logout"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Kilépés</a>
+              </li>
             </ul>
-                    <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="/contact">Kapcsolat</a>
           </li>
-          
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Járműpark
             </a>
-            <ul id="legordul" class="dropdown-menu  active" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="/basic" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Basic kategória</a></li>
-              <li><a class="dropdown-item" href="/comfort" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Comfort kategória</a></li>
-              <li><a class="dropdown-item" href="/premium" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Prémium kategória</a></li>
-              <li><a class="dropdown-item" href="/cars" style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Összes jármű</a></li>
+            <ul id="legordul" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+              <li><a class="dropdown-item" href="/basic"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Basic
+                  kategória</a></li>
+
+
+
+              <li><a class="dropdown-item" href="/comfort"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Comfort
+                  kategória</a></li>
+
+
+
+              <li><a class="dropdown-item" href="/premium"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Prémium
+                  kategória</a></li>
+
+
+              <li><a class="dropdown-item" href="/cars"
+                  style="color: white;  text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;">Összes
+                  jármű</a></li>
+
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/foglalas">Foglalás</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/statisztika">Statisztika</a>
+          </li>
+
+
         </ul>
-
-        <span class="navbar-text ms-auto p-2 bd-highlight">
-          {{ user }}
+        <span class="nav-item ms-auto p-2 bd-highlight" style="font-size: 1.1rem;">
+          Belépve: {{ user }}
         </span>
-
       </div>
-      
+
     </nav>
   </header>
 
   <main>
-    <div class="container" ; style="background-color: rgba(36, 55, 231, 0.212); margin-top: 50px; border-radius: 30px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    <div class="container" ;
+      style="background-color: rgba(36, 55, 231, 0.212); margin-top: 50px; border-radius: 30px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
       <div class="row" ; style="padding-top: 20px">
         <div class="col">
           <h1 class="text-center">CarManagement</h1>
@@ -80,8 +111,8 @@
                 felhasználói adatokat.</p>
               <p>A felhasználók a kapott felhasználónévvel jelszóval igénylésüket a flottakezelő
                 rendszer felületén keresztül nyújthatják be. Ott láthatják, hogy adott időpontra mely gépjárművek
-                érhetők el. </p>
-              <p>A munkatársak részére Basic, Comfort, valamint Premium kategóriájú járművek állnak
+                érhetőek el. </p>
+              <p>A munkatársak részére Basic, Comfort, valamint Prémium kategóriájú járművek állnak
                 rendelkezésre - beosztásuktól, jogosultsági szintjüktől függően.
               </p>
 
@@ -93,13 +124,13 @@
         </div>
 
       </div>
-      
+
     </div>
-<div class="row" ; style="margin-top: 30px">
+    <!--<div class="row" ; style="margin-top: 30px">
         <div class="d-grid gap-2 col-4 mx-auto">
-          <a href="login.html" class="btn btn-primary">Tovább a bejelentkezés oldalra...</a>
+          <a href="/login" class="btn btn-primary">Tovább a bejelentkezés oldalra...</a>
         </div>
-      </div>
+      </div>-->
   </main>
 
 </body>

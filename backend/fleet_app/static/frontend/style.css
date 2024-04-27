@@ -1,58 +1,72 @@
-body{
-color: white;  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;    
+body {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
-main{
+
+main {
     height: 100vh;
     overflow: auto;
     /*margin-top: 0vh;*/
     background-image: url("img/ferrari_5.jpg");
-    
+
     background-size: cover;
     background-position: top;
 }
-.container{
+
+.container {
     width: 80%;
-    
-    
+
+
 }
 
-header{
-    
+header {
+
     margin-left: 2vw;
     margin-right: 2vw;
 }
-a
-{border-radius: 10px; font-size: large; font-weight: bolder;
+
+a {
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight:500 ;
 
 }
+
 a:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-#jarmuvek{
+#jarmuvek {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-#navfilter{
+#navfilter {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
 }
 
-#legordul{
-    border-radius: 10px;}
-
-.btn{
+#legordul {
     border-radius: 10px;
 }
-.active:hover {box-shadow:  0 10px 15px 0 rgba(0,0,0,0.3) inset, 0 17px 30px 0 rgba(0,0,0,0.2) inset;}
+
+.btn {
+    border-radius: 10px; font-size: 1.2rem
+}
+
+/*.hover {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3) inset, 0 17px 30px 0 rgba(0, 0, 0, 0.2) inset;
+}*/
 
 img {
     opacity: 0.9;
-  }
-  
-  img:hover {
+}
+
+img:hover {
     opacity: 1;
-  }
+}
+
+.nohover{pointer-events: none;}
+
+
