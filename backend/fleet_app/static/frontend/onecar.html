@@ -104,33 +104,41 @@
       style="background-color: rgba(36, 55, 231, 0.212); margin-top: 50px; margin-bottom: 50px; border-radius: 30px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
       <div class="row" ; style="padding: 30px">
         <div class="col">
-          <h1 class="text-center">Jármű adatai</h1>
+          <h1 class="text-center" style="color: yellow;">Jármű adatai</h1>
         </div>
         <div class="row" ; style="padding: 20px">
           <div class="col-6" ; style="text-align: justify" ;>
             <div>
-              <a href="#"></a><img src="/static/images/astra.png" class="card-img-top" style="margin: 20px" width="18 rem" height="mr-auto"
+              <a href="#"></a><img src="/static/images/astra.png" class="card-img-top" style="margin: 20px; border-radius:30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" width="18 rem" height="mr-auto"
                 alt=""></a>
+            </div>
+            <div>
+              <p class="card-img-top" style="text-align: center;   background-color: #2347e7; margin: 20px; border-radius:30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" width="18 rem" height="mr-auto"
+                >Aktuális dátum</p>
+                <p class="card-img-top" style="text-align: center; background-color: #16cc62; margin: 20px; border-radius:30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" width="18 rem" height="mr-auto"
+                >Foglalás dátuma</p>
+                <p class="card-img-top" style="text-align: center; background-color: #cc2b16; margin: 20px; border-radius:30px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" width="18 rem" height="mr-auto"
+                >Foglalt napok</p>
             </div>
           </div>
           <div class="col-6" ; style="text-align: justify" ;>
             <div>
                 <div class="card-body">
-                  <h3 class="h2 mb-3 card-title">Típus: Opel Astra</h3>
-                  <div class="row align-items-center">
-                    <p class="h4 mb-3 card-title lh-base">Évjárat: .........</p>
-                    <p class="h4 mb-3 card-title lh-base">Km óra állása: ..........</p>
-                    <p class="h4 mb-3 card-title lh-base">Kategória:.......</p>
-                    <p class="h4 mb-3 card-title lh-base">Műszaki érvényesség:...........</p>
-                    <p class="h4 mb-3 card-title lh-base">Foglalás:...</p>
-                    
+                  <h3 class="h2 mb-3 card-title" style="color: aquamarine; text-align: center;">Típus: Opel Astra</h3>
+                  <div class="row align-items-center" style="color: rgb(240, 233, 170);">
+                    <p class="h4 mb-3 card-title ">Évjárat: 2022</p>
+                    <p class="h4 mb-3 card-title ">Km óra állása: 6400 km</p>
+                    <p class="h4 mb-3 card-title ">Kategória: Comfort</p>
+                    <p class="h4 mb-3 card-title ">Műszaki érvényesség: 2025.11.24</p>
+                    <p class="h4 mb-3 card-title ">Foglalás: 2024.05.16.-2024.05.17</p>
+                    <p class="h4 mb-3 card-title ">Leírás: Az Opel Astra egy sokoldalú gépjármű, amely kiváló teljesítményt és modern technológiát kínál.</p>
                   </div>
                 </div>
             </div>
           </div>
         </div>
 <!--naptár-->
-<div class="month">
+<div class="month" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
   <ul>
     <li class="prev">&#10094;</li>
     <li class="next">&#10095;</li>
@@ -138,7 +146,7 @@
   </ul>
 </div>
 
-<ul class="weekdays">
+<ul class="weekdays" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
   <li>Hétfő</li>
   <li>Kedd</li>
   <li>Szerda</li>
@@ -148,7 +156,7 @@
   <li>Vasárnap</li>
 </ul>
 
-<ul class="days">
+<ul class="days" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
   <li></li>
   <li></li>
   <li>1</li>
@@ -166,8 +174,8 @@
   <li><span class="active">13</span></li>
   <li>14</li>
   <li>15</li>
-  <li>16</li>
-  <li>17</li>
+  <li><span class="foglalas">16</span></li>
+  <li><span class="foglalas">17</span></li>
   <li>18</li>
   <li>19</li>
   <li>20</li>
@@ -177,9 +185,9 @@
   <li>24</li>
   <li>25</li>
   <li>26</li>
-  <li>27</li>
-  <li>28</li>
-  <li>29</li>
+  <li ><span class="foglalt">27</span></li>
+  <li><span class="foglalt">28</span></li>
+  <li><span class="foglalt">29</span></li>
   <li>30</li>
   <li>31</li>
  </ul>

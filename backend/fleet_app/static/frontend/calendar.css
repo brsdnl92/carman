@@ -74,5 +74,15 @@ body {font-family: Verdana, sans-serif;
 .days li .active {
   padding: 7px;
   background: #2347e7;
-  color: white !important
+  color: white 
+}
+.foglalas {
+  padding: 7px;
+  background: #16cc62;
+  color: white 
+}
+.foglalt {
+  padding: 7px;
+  background: #cc2b16;
+  color: white
 }
