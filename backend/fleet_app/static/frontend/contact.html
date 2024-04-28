@@ -90,7 +90,11 @@
 
         </ul>
         <span class="nav-item ms-auto p-2 bd-highlight" style="font-size: 1.1rem;">
+          {% if user.username == "" %}
+          Nincs bejelentkezve!
+          {% else %}
           Belépve: {{ user }}
+          {% endif %}
         </span>
       </div>
 

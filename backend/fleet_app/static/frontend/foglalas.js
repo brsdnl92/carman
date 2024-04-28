@@ -1,3 +1,4 @@
+//import { jarmuvekRenderel } from './jarmuvek.js';
 
 //SZŰRŐSÁV MÁRKA
 function markaSzuroSav(){

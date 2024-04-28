@@ -23,8 +23,7 @@ def home(request):
 @login_required(login_url='login_page')    
 def basic(request):
     return render(request,'basic.html')
-
-@login_required(login_url='login_page')    
+    
 def carman(request):
     return render(request,'carman.html')
 
@@ -35,8 +34,7 @@ def cars(request):
 @login_required(login_url='login_page')    
 def comfort(request):
     return render(request,'comfort.html')
-
-@login_required(login_url='login_page')    
+   
 def contact(request):
     return render(request,'contact.html')
 
