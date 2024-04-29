@@ -107,15 +107,15 @@ function jarmuvekRenderel(jarmuvek){
             jarmuBtn.href = '/onecar';
             jarmuBtn.className = 'btn btn-primary';
             // proba
-            jarmuBtn.style="position: absolute; bottom: 5px;" 
+            jarmuBtn.style="position: absolute; bottom: 5px; border-radius: 40px;" 
             jarmuBtn.innerText = 'Megnézem';
             
             jarmuLapCol.appendChild(jarmuBtn);
 
             let jarmuKatCol = document.createElement('div');
-            jarmuKatCol.className = 'col fw-bold text-info text-end';
+            jarmuKatCol.className = 'h6 col fw-bold text-warning text-end';
             // proba
-            jarmuKatCol.style="position: absolute; bottom: 5px;  right: 50px;"
+            jarmuKatCol.style="position: absolute; bottom: 1px;  right: 30px;"
             let jarmuKatNev = getJarmuKategoriaNev(jarmu.jarmu_kategoria);
             jarmuKatCol.innerText = jarmuKatNev;
             jarmuLapDiv.appendChild(jarmuKatCol);

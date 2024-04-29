@@ -7,9 +7,15 @@ function markaSzuroSav(){
     nav.appendChild(fieldsetMarka);
     let legendMarka = document.createElement('legend');
     legendMarka.innerText = "Márka";
+    //
+    legendMarka.style = "color: yellow; text-align: center;";
+    //
     fieldsetMarka.appendChild(legendMarka);
     let divMarka = document.createElement('div');
     divMarka.className = "form-check form-switch";
+    //
+    divMarka.style = "margin-left: 9vw;";
+    //
     fieldsetMarka.appendChild(divMarka);
     markak.forEach(element => {
         element.forEach(marka => {
@@ -42,9 +48,15 @@ function jarmuKategoriaSzuroSav(){
     nav.appendChild(fieldsetJarmuKat);
     let legendJarmuKat = document.createElement('legend');
     legendJarmuKat.innerText = "Kategória";
+     //
+    legendJarmuKat.style = "color: yellow; text-align: center;";
+     //
     fieldsetJarmuKat.appendChild(legendJarmuKat);
     let divJarmuKat = document.createElement('div');
     divJarmuKat.className = "form-check form-switch";
+    //
+    divJarmuKat.style = "margin-left: 9vw;";
+    //
     fieldsetJarmuKat.appendChild(divJarmuKat);
     jarmuKategoriak.forEach(element =>{
             element.forEach(jarmuKat =>{
@@ -78,9 +90,15 @@ function elerhetosegSzuroSav(){
     nav.appendChild(fieldsetElerhetoseg);
     let legendElerhetoseg = document.createElement('legend');
     legendElerhetoseg.innerText = "Elérhetőség";
+    //
+    legendElerhetoseg.style = "color: yellow; text-align: center;";
+    //
     fieldsetElerhetoseg.appendChild(legendElerhetoseg);
     let divElerhetoseg = document.createElement('div');
     divElerhetoseg.className = "form-check form-switch";
+    //
+    divElerhetoseg.style = "margin-left: 9vw;";
+    //
     fieldsetElerhetoseg.appendChild(divElerhetoseg);
     inputElerhetoseg = document.createElement('input');
     inputElerhetoseg.className = 'form-check-input';
