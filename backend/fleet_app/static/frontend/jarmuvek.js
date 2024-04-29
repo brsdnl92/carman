@@ -65,8 +65,8 @@ function jarmuvekRenderel(jarmuvek){
             jarmuvekEl.appendChild(jarmuCard);
 
             let jarmuAnchor = document.createElement('a');
-            jarmuAnchor.href = '#';
-            jarmuAnchor.style="margin-top: 5vh;";
+            jarmuAnchor.href = '/onecar';
+            jarmuAnchor.style="margin-top: 3vh;";
             jarmuCard.appendChild(jarmuAnchor);
 
             let jarmuKep = document.createElement('img');
@@ -79,19 +79,19 @@ function jarmuvekRenderel(jarmuvek){
             jarmuCard.appendChild(jarmuCardBody);
 
             let jarmuMarkaTipus = document.createElement('p');
-            jarmuMarkaTipus.className = 'h2 mb-3 card-title text-center';
+            jarmuMarkaTipus.className = 'h4 mb-3 card-title text-end';
             let marka = getMarkaNev(jarmu.marka);
             jarmuMarkaTipus.innerText = marka + ' ' + jarmu.tipus;
             jarmuCardBody.appendChild(jarmuMarkaTipus);
 
             let jarmuRendszam = document.createElement('p');
-            jarmuRendszam.className = 'h2 mb-3 card-title text-center';
+            jarmuRendszam.className = 'h4 mb-3 card-title text-end';
             jarmuRendszam.innerText = jarmu.rendszam;
             jarmuCardBody.appendChild(jarmuRendszam);
 
             let elerheto = isElerheto(isElerheto2, jarmu.id);
             let jarmuElerhetoseg = document.createElement('p');
-            jarmuElerhetoseg.className = 'h2 mb-3 card-title text-center';
+            jarmuElerhetoseg.className = 'h4 mb-3 card-title text-end';
             jarmuElerhetoseg.innerText = elerheto;
             jarmuCardBody.appendChild(jarmuElerhetoseg);
 
@@ -106,12 +106,16 @@ function jarmuvekRenderel(jarmuvek){
             let jarmuBtn = document.createElement('a');
             jarmuBtn.href = '/onecar';
             jarmuBtn.className = 'btn btn-primary';
+            // proba
+            jarmuBtn.style="position: absolute; bottom: 5px;" 
             jarmuBtn.innerText = 'Megnézem';
             
             jarmuLapCol.appendChild(jarmuBtn);
 
             let jarmuKatCol = document.createElement('div');
             jarmuKatCol.className = 'col fw-bold text-info text-end';
+            // proba
+            jarmuKatCol.style="position: absolute; bottom: 5px;  right: 50px;"
             let jarmuKatNev = getJarmuKategoriaNev(jarmu.jarmu_kategoria);
             jarmuKatCol.innerText = jarmuKatNev;
             jarmuLapDiv.appendChild(jarmuKatCol);

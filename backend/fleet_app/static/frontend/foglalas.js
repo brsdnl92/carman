@@ -84,6 +84,7 @@ function elerhetosegSzuroSav(){
     fieldsetElerhetoseg.appendChild(divElerhetoseg);
     inputElerhetoseg = document.createElement('input');
     inputElerhetoseg.className = 'form-check-input';
+    
     inputElerhetoseg.type = 'checkbox';
     inputElerhetoseg.name = 'inputElerhetoseg';
     inputElerhetoseg.id = 'elérhető';
